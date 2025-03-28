@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <style>
+        body
+        {
+            text-align: center;
+        }
+     </style>
+     <script src="calculos.js"></script>
+</head>
+<body bgcolor="#e8e8fc">
+    <h1>EMPRESA POLLITOS</h1>
+    <h3>NÓNIMA DE EMPLEADOS</h3>
+    <center>
+        <table border="2">
+            <tr>
+                <th>No.</th>
+                <th>CLAVE</th>
+                <th>CORREO</th>
+                <th>FECHA DE NACIMINETO</th>
+                <th>SEXO</th>
+                <th>SUELDO X DIA</th>
+                <th>DIAS TRABAJADOS</th>
+                <th>BONO 1</th>
+                <th>BONO 2</th>
+                <th>BONO 3</th>
+                <th>BOTON</th>
+                <th>DESCUENTO 1</th>
+                <th>DESCUENTO 2</th>
+                <th>SUELDO NETO</th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="1" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave1" id="clave1" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha1" id="fecha1" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo1" id="sexo1" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod1" id="sueldod1" required>
+                </th>
+                <th>
+                    <input type="number" name="dias1" id="dias1" required>
+                </th>
+                <th>
+                    <input type="number" name="bono1" id="bono1" required>
+                </th>
+                <th>
+                    <input type="number" name="bono12" id="bono12" required>
+                </th>
+                <th>
+                    <input type="number" name="bono13" id="bono13" required>
+                </th>
+                <th>
+                    <input type="button" name="btn1" id="btn1" value="Calcular" onclick="Sueldo1()">
+                </th>
+                <th>
+                    <input type="number" name="descuento1" id="descuento1">
+                </th>
+                <th>
+                    <input type="number" name="descuento12" id="descuento12">
+                </th>
+                <th>
+                    <input type="number" name="sueldon1" id="sueldon1" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="2" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave2" id="clave2" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha2" id="fecha2" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo2" id="sexo2" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod2" id="sueldod2" required>
+                </th>
+                <th>
+                    <input type="number" name="dias2" id="dias2" required>
+                </th>
+                <th>
+                    <input type="number" name="bono2" id="bono2" required>
+                </th>
+                <th>
+                    <input type="number" name="bono22" id="bono22" required>
+                </th>
+                <th>
+                    <input type="number" name="bono23" id="bono23" required>
+                </th>
+                <th>
+                    <input type="button" name="btn2" id="btn2" value="Calcular" onclick="Sueldo2()">
+                </th>
+                <th>
+                    <input type="number" name="descuento2" id="descuento2">
+                </th>
+                <th>
+                    <input type="number" name="descuento22" id="descuento22">
+                </th>
+                <th>
+                    <input type="number" name="sueldon2" id="sueldon2" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="3" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave3" id="clave3" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha3" id="fecha3" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo3" id="sexo3" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod3" id="sueldod3" required>
+                </th>
+                <th>
+                    <input type="number" name="dias3" id="dias3" required>
+                </th>
+                <th>
+                    <input type="number" name="bono3" id="bono3" required>
+                </th>
+                <th>
+                    <input type="number" name="bono32" id="bono32" required>
+                </th>
+                <th>
+                    <input type="number" name="bono33" id="bono33" required>
+                </th>
+                <th>
+                    <input type="button" name="btn3" id="btn3" value="Calcular" onclick="Sueldo3()">
+                </th>
+                <th>
+                    <input type="number" name="descuento3" id="descuento3">
+                </th>
+                <th>
+                    <input type="number" name="descuento32" id="descuento32">
+                </th>
+                <th>
+                    <input type="number" name="sueldon3" id="sueldon3" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="4" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave4" id="clave4" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha4" id="fecha4" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo4" id="sexo4" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod4" id="sueldod4" required>
+                </th>
+                <th>
+                    <input type="number" name="dias4" id="dias4" required>
+                </th>
+                <th>
+                    <input type="number" name="bono4" id="bono4" required>
+                </th>
+                <th>
+                    <input type="number" name="bono42" id="bono42" required>
+                </th>
+                <th>
+                    <input type="number" name="bono43" id="bono43" required>
+                </th>
+                <th>
+                    <input type="button" name="btn4" id="btn4" value="Calcular" onclick="Sueldo4()">
+                </th>
+                <th>
+                    <input type="number" name="descuento4" id="descuento4">
+                </th>
+                <th>
+                    <input type="number" name="descuento42" id="descuento42">
+                </th>
+                <th>
+                    <input type="number" name="sueldon4" id="sueldon4" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="5" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave5" id="clave5" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha5" id="fecha5" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo5" id="sexo5" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod5" id="sueldod5" required>
+                </th>
+                <th>
+                    <input type="number" name="dias5" id="dias5" required>
+                </th>
+                <th>
+                    <input type="number" name="bono5" id="bono5" required>
+                </th>
+                <th>
+                    <input type="number" name="bono52" id="bono52" required>
+                </th>
+                <th>
+                    <input type="number" name="bono53" id="bono53" required>
+                </th>
+                <th>
+                    <input type="button" name="btn5" id="btn5" value="Calcular" onclick="Sueldo5()">
+                </th>
+                <th>
+                    <input type="number" name="descuento5" id="descuento5">
+                </th>
+                <th>
+                    <input type="number" name="descuento52" id="descuento52">
+                </th>
+                <th>
+                    <input type="number" name="sueldon5" id="sueldon5" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="6" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave6" id="clave6" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha6" id="fecha6" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo6" id="sexo6" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod6" id="sueldod6" required>
+                </th>
+                <th>
+                    <input type="number" name="dias6" id="dias6" required>
+                </th>
+                <th>
+                    <input type="number" name="bono6" id="bono6" required>
+                </th>
+                <th>
+                    <input type="number" name="bono62" id="bono62" required>
+                </th>
+                <th>
+                    <input type="number" name="bono63" id="bono63" required>
+                </th>
+                <th>
+                    <input type="button" name="btn6" id="btn6" value="Calcular" onclick="Sueldo6()">
+                </th>
+                <th>
+                    <input type="number" name="descuento6" id="descuento6">
+                </th>
+                <th>
+                    <input type="number" name="descuento62" id="descuento62">
+                </th>
+                <th>
+                    <input type="number" name="sueldon6" id="sueldon6" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="7" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave7" id="clave7" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha7" id="fecha7" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo7" id="sexo7" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod7" id="sueldod7" required>
+                </th>
+                <th>
+                    <input type="number" name="dias7" id="dias7" required>
+                </th>
+                <th>
+                    <input type="number" name="bono7" id="bono7" required>
+                </th>
+                <th>
+                    <input type="number" name="bono72" id="bono72" required>
+                </th>
+                <th>
+                    <input type="number" name="bono73" id="bono73" required>
+                </th>
+                <th>
+                    <input type="button" name="btn7" id="btn7" value="Calcular" onclick="Sueldo7()">
+                </th>
+                <th>
+                    <input type="number" name="descuento7" id="descuento7">
+                </th>
+                <th>
+                    <input type="number" name="descuento72" id="descuento72">
+                </th>
+                <th>
+                    <input type="number" name="sueldon7" id="sueldon7" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="8" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave8" id="clave8" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha8" id="fecha8" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo8" id="sexo8" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod8" id="sueldod8" required>
+                </th>
+                <th>
+                    <input type="number" name="dias8" id="dias8" required>
+                </th>
+                <th>
+                    <input type="number" name="bono8" id="bono8" required>
+                </th>
+                <th>
+                    <input type="number" name="bono82" id="bono82" required>
+                </th>
+                <th>
+                    <input type="number" name="bono83" id="bono83" required>
+                </th>
+                <th>
+                    <input type="button" name="btn8" id="btn8" value="Calcular" onclick="Sueldo8()">
+                </th>
+                <th>
+                    <input type="number" name="descuento8" id="descuento8">
+                </th>
+                <th>
+                    <input type="number" name="descuento82" id="descuento82">
+                </th>
+                <th>
+                    <input type="number" name="sueldon8" id="sueldon8" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="9" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave9" id="clave9" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha9" id="fecha9" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo9" id="sexo9" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod9" id="sueldod9" required>
+                </th>
+                <th>
+                    <input type="number" name="dias9" id="dias9" required>
+                </th>
+                <th>
+                    <input type="number" name="bono9" id="bono9" required>
+                </th>
+                <th>
+                    <input type="number" name="bono92" id="bono92" required>
+                </th>
+                <th>
+                    <input type="number" name="bono93" id="bono93" required>
+                </th>
+                <th>
+                    <input type="button" name="btn9" id="btn9" value="Calcular" onclick="Sueldo9()">
+                </th>
+                <th>
+                    <input type="number" name="descuento9" id="descuento9">
+                </th>
+                <th>
+                    <input type="number" name="descuento92" id="descuento92">
+                </th>
+                <th>
+                    <input type="number" name="sueldon9" id="sueldon9" readonly>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="number" value="10" readonly>
+                </th>
+                <th>
+                    <input type="number" name="clave10" id="clave10" required>
+                </th>
+                <th>
+                    <input type="email" placeholder="usuario@dominio.com" zise="40" title="Escribe tu correo" required>
+                </th>
+                <th>
+                    <input type="date" name="fecha10" id="fecha10" value="yyyy-mm-dd" required>
+                </th>
+                <th>
+                    <input type="text" name="sexo10" id="sexo10" required> 
+                </th>
+                <th>
+                    <input type="number" name="sueldod10" id="sueldod10" required>
+                </th>
+                <th>
+                    <input type="number" name="dias10" id="dias10" required>
+                </th>
+                <th>
+                    <input type="number" name="bono10" id="bono10" required>
+                </th>
+                <th>
+                    <input type="number" name="bono102" id="bono102" required>
+                </th>
+                <th>
+                    <input type="number" name="bono103" id="bono103" required>
+                </th>
+                <th>
+                    <input type="button" name="btn10" id="btn10" value="Calcular" onclick="Sueldo10()">
+                </th>
+                <th>
+                    <input type="number" name="descuento10" id="descuento10">
+                </th>
+                <th>
+                    <input type="number" name="descuento102" id="descuento102">
+                </th>
+                <th>
+                    <input type="number" name="sueldon10" id="sueldon10" readonly>
+                </th>
+            </tr>
+        </table>
+    </center>
+    <p style="text-align: left;">
+      <input type="button" name="btn1" id="btn1" value="Total Sueldos" onclick="Total()">
+      <input type="number" name="sueldot" id="sueldot" readonly>
+      <br><br>
+      <input type="button" name="limpiar" id="limpiar" value="Limpiar" onclick="location.reload()">
+    </p>
+</body>
+</html>
